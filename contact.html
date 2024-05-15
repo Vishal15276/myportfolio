@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body {
-                background-image: url("grunge-black-concrete-textured-background_53876-124541.avif"); 
-                background-size: cover; /* Ensures the image covers the entire background */
+<head>
+    <style>
+        body {
+            background-image: url("grunge-black-concrete-textured-background_53876-124541.avif"); 
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            color: antiquewhite;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 20000;
+        }
+        .container {
+            background-image: url("1000_F_538627760_ah9BPKQ0K4d9PnJ6O5UrsPATy1IaY3ne.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 50vh;
+            width: 40%;
+            margin-left: 520px;
+            opacity: 0;
+            border-radius: 50%;
+            animation: slideIn 1s forwards; /* Apply slide-in animation */
+        }
+        
+        /* Keyframe animation for sliding in */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%); /* Slide in from the left */
             }
-            h1 {
-                text-align: center;
-                color:antiquewhite;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                
-                 
-            }
-            h2{
-                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-weight: 20000;
-                
-            }
-            .container{
-                background-image: url("1000_F_538627760_ah9BPKQ0K4d9PnJ6O5UrsPATy1IaY3ne.jpg");
-                background-size: cover; /* Ensures the image covers the entire background */
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                height: 50vh;
-                width: 40%;
-                margin-left: 520px;
+            to {
                 opacity: 0.5;
-                border-radius: 50%;
+                transform: translateX(0); /* Slide to the center */
             }
-                
-        </style>
-    </head>
-    <body>
-        <h1>CONTACT INFORMATION</h1>
-        <br><br>
-        <br>
-        <br><br>
-        <br>
-        <br>
-        <div class="container">
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTACT INFORMATION</h1>
+    <br><br><br><br><br><br><br>
+    <div class="container">
         <h2><center>Email: vishalt.22cse@kongu.edu</center></h2>
-        <br><br>
-        <br>
-        <br>
+        <br><br><br><br>
         <h2><center>Mobile: +91 9361413115</center></h2>
-        </div>
-    </body>
+    </div>
+</body>
 </html>
