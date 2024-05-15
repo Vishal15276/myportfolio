@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Embed</title>
+    <style>
+        /* Set styles for the iframe container */
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+        }
+        
+        /* Set styles for the iframe */
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Place the iframe inside a container with a specific aspect ratio -->
+<div class="iframe-container">
+    <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F9vHZW9nksBSmW1maXGxDTS%2FUntitled%3Fnode-id%3D0%253A1%26t%3D5DGvHDJ07SzCSUCB-1" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>

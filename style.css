@@ -1,0 +1,49 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-image: url("display-background-with-smoky-atmosphere_1048-14752.avif");
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+}
+.container {
+    display: flex;
+    background-image: url("isplay-background-with-smoky-atmosphere_1048-14752.avif"); 
+    color:rgb(213, 224, 206);
+    height: auto;
+    width:100%;
+    border-color: aliceblue;
+    justify-content: center;
+    height:10vh;
+    gap: 8rem;
+}   
+
+.profile{
+    
+    font-size: 30px;
+    margin-top: 30px;
+     
+    font-weight: bold;
+    font-family:cursive;
+    font-style: italic;
+}
+.about{
+    margin-top: 30px;
+    
+    font-size: 30px;
+    font-weight: bold;
+    font-family:cursive;
+    font-style: italic;
+
+}
+.contact {
+    margin-top: 30px;
+    
+    font-size: 30px;
+    font-weight: bold;
+    font-family:cursive;
+    font-style: italic;
+}
