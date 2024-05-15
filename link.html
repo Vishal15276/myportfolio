@@ -16,7 +16,20 @@
                 opacity: 0.5;
                 border-radius: 50%;
                 gap: 4rem;
+                animation:slideIn 1s forwards;
             }
+
+        @keyframes slideIn {
+            from{
+                opacity:0%;
+                transform: translateX(-100%);
+            }
+            to{
+                opacity: 0.5;
+                transform:translateX() ;
+            }            
+        }
+
         a{
             text-align: center ;
             font-size: 30px;
