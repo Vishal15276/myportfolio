@@ -4,7 +4,7 @@ a {
 }
 
 body{
-    background-image: url("display-background-with-smoky-atmosphere_1048-14752.avif");
+     background-image: url("display-background-with-smoky-atmosphere_1048-14752.avif");
     background-size: cover;
     margin: 0%;
     padding: 0%;
@@ -20,7 +20,14 @@ body{
     height:10vh;
     gap: 8rem;
 }   
-
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-size: 24px; /* Adjust size as needed */
+}
+.exit{
+    height: 10vh;
+    margin-left: -200px;
+}
 .profile{
     
     font-size: 30px;
