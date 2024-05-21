@@ -16,9 +16,9 @@ body{
     height: auto;
     width:100%;
     border-color: aliceblue;
-    justify-content: center;
+    justify-content: space-between;
     height:10vh;
-    gap: 8rem;
+    gap: 1rem;
 }   
 .material-symbols-outlined {
     font-family: 'Material Symbols Outlined', sans-serif;
@@ -26,16 +26,15 @@ body{
 }
 .exit{
     height: 10vh;
-    margin-left: -200px;
 }
 .profile{
-    
     font-size: 30px;
     margin-top: 30px;
-     
-    font-weight: bold;
-    font-family:cursive;
-    font-style: italic;
+    
+}
+.nav{
+    display: flex;gap:3rem;
+
 }
 .about{
     margin-top: 30px;
