@@ -24,22 +24,37 @@ body{
     
     
 }
+.name{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+
+}
+.name:hover{
+    color: blue;
+    
+}
+.container{
+    margin-top: 200px;
+    margin-left: 140px;
+}
 .logo{
     font-size: 30px;
     font-weight: 700;
-    margin-left: 200px;
+    margin-left: 140px;
 }
 
 .navbar{
     display: flex;
     gap: 7rem;
+    font-weight:500;
+    font-size: 25px;
+    margin-right: 200px;
 }
 
 
 .about{
     margin-top: 30px;
-    
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     font-family:cursive;
     font-style: italic;
