@@ -4,14 +4,15 @@ a {
 }
 
 body{
-     background-image: url("display-background-with-smoky-atmosphere_1048-14752.avif");
+     
     background-size: cover;
     margin: 0%;
     padding: 0%;
 }
-.container {
+ 
+.header {
     display: flex;
-    background-image: url("isplay-background-with-smoky-atmosphere_1048-14752.avif"); 
+    background-image: url("display-background-with-smoky-atmosphere_1048-14752.avif"); 
     color:rgb(213, 224, 206);
     height: auto;
     width:100%;
@@ -19,24 +20,22 @@ body{
     justify-content: space-between;
     height:10vh;
     gap: 2rem;
-}   
-.material-symbols-outlined {
-    font-family: 'Material Symbols Outlined', sans-serif;
-    font-size: 24px; /* Adjust size as needed */
-}
-.exit{
-    height: 10vh;
-}
-.profile{
-    font-size: 30px;
-    margin-top: 30px;
+    align-items: center;
+    
     
 }
-.nav{
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 200px;
+}
+
+.navbar{
     display: flex;
     gap: 7rem;
-
 }
+
+
 .about{
     margin-top: 30px;
     
