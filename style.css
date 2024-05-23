@@ -111,22 +111,61 @@ p{
     background: #00abf0;
     border: 2px solid;
 }
-.about:hover{
-    width: 100px;
-    background-color:darkslategray;
-    color: #fff;
-    text-align: center;
-    border-radius: 10px;
-}
-.contact:hover{
-    width: 100px;
-    background-color:darkslategray;
-    color: #fff;
-    text-align: center;
-    border-radius: 10px;
-}
-/* styles.css */
 
+.contact {
+    display: inline-block;
+    position: relative; /* Required for the absolute positioning */
+    
+    
+    text-align: center;
+    border-radius: 10px;
+    transition: width 0.3s, background-color 0.3s, color 0.3s; /* Smooth transitions */
+    overflow: hidden; 
+    white-space: nowrap; 
+    background-color: transparent; 
+}
+
+
+
+.contact:hover {
+    width: 120px; /* Box width on hover */
+    background-color: darkslategray;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position:static
+}
+
+.contact:hover a {
+    color: #fff; /* Change link color on hover */
+}
+.about {
+    display: inline-block;
+    position: relative; /* Required for the absolute positioning */
+    
+    
+    text-align: center;
+    border-radius: 10px;
+    transition: width 0.3s, background-color 0.3s, color 0.3s; /* Smooth transitions */
+    overflow: hidden; 
+    white-space: nowrap; 
+    background-color: transparent; 
+}
+
+
+
+.about:hover {
+    width: 120px; /* Box width on hover */
+    background-color: darkslategray;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position:static
+}
+
+.about:hover a {
+    color: #fff; /* Change link color on hover */
+}
 .projects {
     display: inline-block;
     position: relative; /* Required for the absolute positioning */
@@ -143,7 +182,7 @@ p{
 
 
 .projects:hover {
-    width: 100px; /* Box width on hover */
+    width: 120px; /* Box width on hover */
     background-color: darkslategray;
     color: #fff;
     text-align: center;
@@ -152,6 +191,33 @@ p{
 }
 
 .projects:hover a {
+    color: #fff; /* Change link color on hover */
+}
+.skill {
+    display: inline-block;
+    position: relative; /* Required for the absolute positioning */
+    
+    
+    text-align: center;
+    border-radius: 10px;
+    transition: width 0.3s, background-color 0.3s, color 0.3s; /* Smooth transitions */
+    overflow: hidden; 
+    white-space: nowrap; 
+    background-color: transparent; 
+}
+
+
+
+.skill:hover {
+    width: 120px; /* Box width on hover */
+    background-color: darkslategray;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    position:static
+}
+
+.skill:hover a {
     color: #fff; /* Change link color on hover */
 }
 .fa {
