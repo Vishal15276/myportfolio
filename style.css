@@ -1,3 +1,10 @@
+html{
+    background-image: url("desktop-wallpaper-dark-gold-black-and-gold-pattern.jpg");
+    display: flex;
+}
+body{
+    color:azure;
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,11 +22,11 @@ body{
 }
 .name{
     font-size: 40px;
-    color: rgb(0, 0, 0);
+    color:aliceblue
 }
 .header {
     display: flex;
-    background-image: url("display-background-with-smoky-atmosphere_1048-14752.avif"); 
+    
     color:rgb(213, 224, 206);
     height: auto;
     width:100%;
@@ -57,10 +64,7 @@ p{
     font-size: 25px;
     margin-right: 200px;
 }
-.navbar:hover{
-    color: #00abf0;
-    transition: 0.5s;
-}
+
 .button1{
     display: flex;
     border:20px;
@@ -73,6 +77,8 @@ p{
     font-size:20px;
     background-color: aqua;
     border-radius: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
     
 }
 .button2{
@@ -87,11 +93,17 @@ p{
     font-size:20px;
     background-color: aqua;
     border-radius: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
     
 }
 .button1:hover{
     color: aqua;
-    background-color: rgb(17, 24, 24);
+    background-color: rgb(0, 0, 0);
+}
+.button2:hover{
+    color: aqua;
+    background-color: rgb(0, 0, 0);
 }
 .btn-box{
     width: 150px;
@@ -99,3 +111,47 @@ p{
     background: #00abf0;
     border: 2px solid;
 }
+.about:hover{
+    width: 100px;
+    background-color:darkslategray;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+.contact:hover{
+    width: 100px;
+    background-color:darkslategray;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+/* styles.css */
+
+.projects {
+    display: inline-block;
+    position: relative; /* Required for the absolute positioning */
+    
+    
+    text-align: center;
+    border-radius: 10px;
+    transition: width 0.3s, background-color 0.3s, color 0.3s; /* Smooth transitions */
+    overflow: hidden; 
+    white-space: nowrap; 
+    background-color: transparent; 
+}
+
+
+
+.projects:hover {
+    width: 100px; /* Box width on hover */
+    background-color: darkslategray;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position:static
+}
+
+.projects:hover a {
+    color: #fff; /* Change link color on hover */
+}
+
