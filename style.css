@@ -1,6 +1,8 @@
 html{
-    background-image: url("desktop-wallpaper-dark-gold-black-and-gold-pattern.jpg");
-    display: flex;
+    background-image: url("black-geometric-memphis-social-banner_53876-116843.avif");
+    display:flex;
+    background-size: cover;
+   
 }
 body{
     color:azure;
