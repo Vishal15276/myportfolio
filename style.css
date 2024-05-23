@@ -154,4 +154,20 @@ p{
 .projects:hover a {
     color: #fff; /* Change link color on hover */
 }
-
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 200px 20px;
+  }
+  
+  .fa:hover {
+      background-color: aqua;
+  }
+.fa-linkedin {
+    
+    background: #007bb5;
+    color: white;
+  }
