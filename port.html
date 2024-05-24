@@ -45,23 +45,31 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus blanditiis deserunt optio quasi alias qui velit libero quaerat vero, repellendus ipsum molestias dignissimos fuga a officiis ea hic perferendis esse sed adipisci, est at sunt eos. Qui et, eum aperiam officia ex quisquam molestias, adipisci dolorum praesentium, magnam sint dolorem!</p>
     <div class="container1">
         <h2><center>Email: vishal15276@gmail.com</center></h2>
-        <br><br><br><br>
+        
         <h2><center>Mobile: +91 9361413115</center></h2>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); // Stop observing once it's visible
-                    }
-                });
-            }, { threshold: 0.1 }); // Adjust the threshold as needed
 
-            const container = document.querySelector('.container');
-            observer.observe(container);
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(window).on('scroll', function() {
+                var container1 = $('.container1');
+                var contactHov = $('#contact-hov');
+                var contactTop = contactHov.offset().top;
+                var contactBottom = contactTop + contactHov.outerHeight();
+                var viewportTop = $(window).scrollTop();
+                var viewportBottom = viewportTop + $(window).height();
+
+                // Check if contact is within the viewport
+                if (contactBottom > viewportTop && contactTop < viewportBottom) {
+                    container1.addClass('animate');
+                } else {
+                    container1.removeClass('animate');
+                }
+            });
         });
+
     </script>
 </body>
 </html>
