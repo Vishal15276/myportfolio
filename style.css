@@ -1,313 +1,146 @@
-html{
+html {
     background-image: url("black-geometric-memphis-social-banner_53876-116843.avif");
-    display:flex;
+    display: flex;
     background-size: cover;
-   
 }
-body{
-    color:azure;
+
+body {
+    color: azure;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-body{
-     
+body {
     background-size: cover;
     margin: 0%;
     padding: 0%;
 }
-.name{
+
+.name {
     font-size: 40px;
-    color:aliceblue
+    color: aliceblue
 }
+
 .header {
     display: flex;
-    
-    color:rgb(213, 224, 206);
+    color: rgb(213, 224, 206);
     height: auto;
-    width:100%;
+    width: 100%;
     border-color: aliceblue;
     justify-content: space-between;
-    height:10vh;
+    height: 10vh;
     gap: 1rem;
     align-items: center;
 }
 
-.name h1:hover{
+.name h1:hover {
     color: rgba(15, 15, 255, 0.925);
-    
 }
-.container{
+
+.container {
     margin-top: 200px;
     margin-left: 140px;
-    
-    
 }
-p{
+
+p {
     margin-top: 3rem;
 }
-.logo{
 
+.logo {
     font-size: 30px;
     font-weight: 700;
     margin-left: 140px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     gap: 7rem;
-    font-weight:500;
+    font-weight: 500;
     font-size: 25px;
     margin-right: 200px;
 }
 
-.button1{
+.button1, .button2 {
     display: flex;
-    border:20px;
+    border: 20px;
     justify-content: center;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     width: 200px;
-    height:50px;
-    font-size:20px;
+    height: 50px;
+    font-size: 20px;
     background-color: aqua;
     border-radius: 20px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
-    
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
 }
-.button2{
-    display: flex;
-    border:20px;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    width: 200px;
-    height:50px;
-    font-size:20px;
-    background-color: aqua;
-    border-radius: 20px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bolder;
-    
-}
-.button1:hover{
+
+.button1:hover, .button2:hover {
     color: aqua;
     background-color: rgb(0, 0, 0);
+    transform: scale(1.1);
 }
-.button2:hover{
-    color: aqua;
-    background-color: rgb(0, 0, 0);
-}
-.btn-box{
+
+.btn-box {
     width: 150px;
     height: 100%;
     background: #00abf0;
     border: 2px solid;
 }
 
-.contact {
+.contact, .about, .projects, .skill {
     display: inline-block;
-    position: relative; /* Required for the absolute positioning */
-    
-    
+    position: relative;
     text-align: center;
     border-radius: 10px;
-    transition: width 0.3s, background-color 0.3s, color 0.3s; /* Smooth transitions */
-    overflow: hidden; 
-    white-space: nowrap; 
-    background-color: transparent; 
+    transition: width 0.3s, background-color 0.3s, color 0.3s, transform 0.3s;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: transparent;
+    margin: 10px; /* Adjust as needed for spacing */
 }
 
-
-
-.contact:hover {
-    width: 120px; /* Box width on hover */
+.contact:hover, .about:hover, .projects:hover, .skill:hover {
     background-color: darkslategray;
     color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    position:static
+    transform: scale(1.2); /* Slightly increase the scale */
+    z-index: 10; /* Ensure it appears above other elements */
 }
 
-.contact:hover a {
-    color: #fff; /* Change link color on hover */
-}
-.about {
-    display: inline-block;
-    position: relative; /* Required for the absolute positioning */
-    
-    
-    text-align: center;
-    border-radius: 10px;
-    transition: width 0.3s, background-color 0.3s, color 0.3s; /* Smooth transitions */
-    overflow: hidden; 
-    white-space: nowrap; 
-    background-color: transparent; 
-}
-
-
-
-.about:hover {
-    width: 120px; /* Box width on hover */
-    background-color: darkslategray;
+.contact:hover a, .about:hover a, .projects:hover a, .skill:hover a {
     color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    position:static
 }
 
-.about:hover a {
-    color: #fff; /* Change link color on hover */
-}
-.projects {
-    display: inline-block;
-    position: relative; /* Required for the absolute positioning */
-    
-    
-    text-align: center;
-    border-radius: 10px;
-    transition: width 0.3s, background-color 0.3s, color 0.3s; /* Smooth transitions */
-    overflow: hidden; 
-    white-space: nowrap; 
-    background-color: transparent; 
-}
-
-
-
-.projects:hover {
-    width: 120px; /* Box width on hover */
-    background-color: darkslategray;
-    color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    position:static
-}
-
-.projects:hover a {
-    color: #fff; /* Change link color on hover */
-}
-.skill {
-    display: inline-block;
-    position: relative; /* Required for the absolute positioning */
-    
-    
-    text-align: center;
-    border-radius: 10px;
-    transition: width 0.3s, background-color 0.3s, color 0.3s; /* Smooth transitions */
-    overflow: hidden; 
-    white-space: nowrap; 
-    background-color: transparent; 
-}
-
-
-
-.skill:hover {
-    width: 120px; /* Box width on hover */
-    background-color: darkslategray;
-    color: #fff;
-    text-align: center;
-    border-radius: 50px;
-    position:static
-}
-
-.skill:hover a {
-    color: #fff; /* Change link color on hover */
-}
-.social{
-   
+.social {
     margin-top: 50px;
-  }
-  .cib-linkedin{
+}
 
-    gap:3rem;
+.cib-linkedin, .cib-leetcode, .cib-hackerrank, .cib-github {
+    gap: 3rem;
     margin-top: 200px;
     padding: 30px;
     font-size: 55px;
     width: 100px;
-    height:fit-content;
+    height: fit-content;
     text-align: center;
     text-decoration: none;
     font-size: 35px;
     color: white;
- }
- .cib-linkedin:hover{
-    background-color:black;
-      border-radius: 20%;
-      color: aqua;
-     
+    transition: background-color 0.3s, color 0.3s;
+}
 
- }
-
- 
- .cib-leetcode{
-
-    gap:3rem;
-    margin-top: 200px;
-    padding: 30px;
-    font-size: 55px;
-    width: 100px;
-    height:fit-content;
-    text-align: center;
-    text-decoration: none;
-    font-size: 35px;
-    color: white;
- }
- .cib-leetcode:hover{
-    background-color:black;
-      border-radius: 20%;
-      color: aqua;
-     
-
- }
-
- .cib-hackerrank{
-
-    gap:3rem;
-    margin-top: 200px;
-    padding: 30px;
-    font-size: 55px;
-    width: 100px;
-    height:fit-content;
-    text-align: center;
-    text-decoration: none;
-    font-size: 35px;
-    color: white;
- }
- .cib-hackerrank:hover{
-    background-color:black;
-      border-radius: 20%;
-      color: aqua;
-     
-
- }
- .cib-github{
-
-    gap:3rem;
-    margin-top: 200px;
-    padding: 30px;
-    font-size: 55px;
-    width: 100px;
-    height:fit-content;
-    text-align: center;
-    text-decoration: none;
-    font-size: 35px;
-    color: white;
- }
- .cib-github:hover{
-    background-color:black;
-      border-radius: 20%;
-      color: aqua;
-     
-
- }
-
-
+.cib-linkedin:hover, .cib-leetcode:hover, .cib-hackerrank:hover, .cib-github:hover {
+    background-color: black;
+    border-radius: 20%;
+    color: aqua;
+}
