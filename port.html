@@ -3,50 +3,65 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+    
 </head>
 <body>
-    
-    
-    <header class="header"> 
+    <header class="header">
         <a href="#" class="logo">Vishal</a>
         <nav class="navbar">
             <div class="about">
-            <a href="about.html">About</a>
+                <a href="about.html">About</a>
             </div>
             <div class="contact">
-            <a href="#contact-hov">Contact</a>
+                <a href="#contact-hov">Contact</a>
             </div>
             <div class="projects">
-            <a href="link.html">Projects</a>
+                <a href="link.html">Projects</a>
             </div>
             <div class="skill">
-                <a ref="skill.html">Skills</a>
+                <a href="skill.html">Skills</a>
             </div>
-            
         </nav>
-        
     </header>
+
     <div class="container">
         <div class="name">
-    <h1>Hi,  I'm Vishal  T</h1>
-    <h3>Full Stack Developer</h3>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis culpa, corrupti reprehenderit doloremque enim officiis! Qui assumenda aliquid soluta voluptatem praesentium quia ratione quae laborum? Reprehenderit, sunt.
-    </p>
-    <button class="button1">Button 1</button>
-    <button class="button2">Button 2</button>
-        
+            <h1>Hi, I'm Vishal T</h1>
+            <h3>Full Stack Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis culpa, corrupti reprehenderit doloremque enim officiis! Qui assumenda aliquid soluta voluptatem praesentium quia ratione quae laborum? Reprehenderit, sunt.</p>
+            <button class="button1">Button 1</button>
+            <button class="button2">Button 2</button>
         </div>
         <div class="social">
-        <a href="https://www.linkedin.com/in/vishal-t-a51390259/" class="fa fa-linkedin"><i class="cib-linkedin"></i></a>
-        <a href="https://leetcode.com/u/Vishal15276/" class="fa fa-leetcode"><i class="cib cib-leetcode"></i></a>
-        <a href="https://www.hackerrank.com/profile/vishalt_22CSR242" class="fa f a-hackerrank"><i class="cib-hackerrank"></i></a>
-        <a href="https://github.com/Vishal15276" class="fa fa-github"><i class="cib-github"></i></a>
-</div>
+            <a href="https://www.linkedin.com/in/vishal-t-a51390259/" class="fa fa-linkedin"><i class="cib-linkedin"></i></a>
+            <a href="https://leetcode.com/u/Vishal15276/" class="fa fa-leetcode"><i class="cib cib-leetcode"></i></a>
+            <a href="https://www.hackerrank.com/profile/vishalt_22CSR242" class="fa fa-hackerrank"><i class="cib-hackerrank"></i></a>
+            <a href="https://github.com/Vishal15276" class="fa fa-github"><i class="cib-github"></i></a>
+        </div>
+    </div>
 
-<h1 id="contact-hov">Contact</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus blanditiis deserunt optio quasi alias qui velit libero quaerat vero, repellendus ipsum molestias dignissimos fuga a officiis ea hic perferendis esse sed adipisci, est at sunt eos. Qui et, eum aperiam officia ex quisquam molestias, adipisci dolorum praesentium, magnam sint dolorem!</p>
-    </body>
+    <h1 id="contact-hov">Contact</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus blanditiis deserunt optio quasi alias qui velit libero quaerat vero, repellendus ipsum molestias dignissimos fuga a officiis ea hic perferendis esse sed adipisci, est at sunt eos. Qui et, eum aperiam officia ex quisquam molestias, adipisci dolorum praesentium, magnam sint dolorem!</p>
+    <div class="container1">
+        <h2><center>Email: vishal15276@gmail.com</center></h2>
+        <br><br><br><br>
+        <h2><center>Mobile: +91 9361413115</center></h2>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Stop observing once it's visible
+                    }
+                });
+            }, { threshold: 0.1 }); // Adjust the threshold as needed
+
+            const container = document.querySelector('.container');
+            observer.observe(container);
+        });
+    </script>
+</body>
 </html>
