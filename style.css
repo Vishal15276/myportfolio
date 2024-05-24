@@ -86,6 +86,7 @@ p {
     transition: color 0.3s, background-color 0.3s, transform 0.3s;
 }
 .button2 {
+
     margin-left: 20px;
     display: flex;
     border: 20px;
@@ -121,11 +122,12 @@ p {
     position: relative;
     text-align: center;
     border-radius: 10px;
-    transition: width 0.3s, background-color 0.3s, color 0.3s, transform 0.3s;
+    transition: width 0.1s, background-color 0.1s, color 0.1s, transform 0.1s;
     overflow: hidden;
     white-space: nowrap;
     background-color: transparent;
-    margin: 10px; /* Adjust as needed for spacing */
+    margin: 10px; 
+    padding: 0.5rem 1rem;/* Adjust as needed for spacing */
 }
 
 .contact:hover, .about:hover, .projects:hover, .skill:hover {
