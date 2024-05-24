@@ -222,41 +222,91 @@ p{
 .skill:hover a {
     color: #fff; /* Change link color on hover */
 }
-.cib-linkedin{
+.social{
+   
+    margin-top: 50px;
+  }
+.fa-linkedin{
     gap:3rem;
-    margin-top: 3%;
+    margin-top: 200px;
     padding: 30px;
-    font-size: 55px;
-    width: 50px;
+    width: 100px;
     height:fit-content;
     text-align: center;
     text-decoration: none;
-    
-  }
-  
-  .fa:hover {
-      background-color:black;
-      border-radius: 50%;
-  }
-.cib-linkedin {
-    
     font-size: 35px;
     color: white;
+    
   }
-  .cib{
-    padding: 20px;
-    font-size: 55px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 200px 20px;
+ 
+  
+  .fa:hover {
+      background-color:rgb(0, 0, 0);
+      border-radius: 20%;
+      color: aqua;
+      
   }
+
+ 
  .cib-leetcode{
 
-    mfont-size: 25px;
+    gap:3rem;
+    margin-top: 200px;
+    padding: 30px;
+    font-size: 55px;
+    width: 100px;
+    height:fit-content;
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
     color: white;
  }
  .cib-leetcode:hover{
     background-color:black;
-      border-radius: 50%;
+      border-radius: 20%;
+      color: aqua;
+     
+
  }
+ .fa-hackerrank{
+    gap:3rem;
+    margin-top: 200px;
+    padding: 30px;
+    width: 100px;
+    height:fit-content;
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    
+  }
+  
+  
+  .fa-hackerrank:hover {
+      background-color:rgb(0, 0, 0);
+      border-radius: 20%;
+      color: aqua;
+      
+  }
+  .fa-github{
+    gap:3rem;
+    margin-top: 200px;
+    padding: 30px;
+    width: 100px;
+    height:fit-content;
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    
+  }
+  
+  
+  .fa-github:hover {
+      background-color:rgb(0, 0, 0);
+      border-radius: 20%;
+      color: aqua;
+      
+  }
+
+
