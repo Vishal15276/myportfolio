@@ -26,7 +26,7 @@ body {
 
 .name {
     font-size: 40px;
-    color: aliceblue
+    color: aliceblue;
 }
 
 .header {
@@ -205,5 +205,21 @@ p {
     margin-top:100px;
 }
 .container2{
-    gap:5rem;
+    background-color: aquamarine;
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+   
+    border-radius: 15%;
+    z-index: 1;
+    padding: 10rem;
+}
+.container3{
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+    background-color: rgb(156, 38, 38);
+    z-index: 2;
 }
