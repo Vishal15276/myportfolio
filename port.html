@@ -42,33 +42,42 @@
     </div>
 
     <h1 id="contact-hov">Contact</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus blanditiis deserunt optio quasi alias qui velit libero quaerat vero, repellendus ipsum molestias dignissimos fuga a officiis ea hic perferendis esse sed adipisci, est at sunt eos. Qui et, eum aperiam officia ex quisquam molestias, adipisci dolorum praesentium, magnam sint dolorem!</p>
+    
     <div class="container1">
         <h2><center>Email: vishal15276@gmail.com</center></h2>
         
         <h2><center>Mobile: +91 9361413115</center></h2>
     </div>
 
+    <h1 id="skill-hov">Skills</h1>
+    <div class="container2">
+    <div class="container3">
+        vdgfdfgg
+    </div>
+    </div>
+    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script>
         $(document).ready(function() {
-            $(window).on('scroll', function() {
-                var container1 = $('.container1');
-                var contactHov = $('#contact-hov');
-                var contactTop = contactHov.offset().top;
-                var contactBottom = contactTop + contactHov.outerHeight();
-                var viewportTop = $(window).scrollTop();
-                var viewportBottom = viewportTop + $(window).height();
+    $(window).on('scroll', function() {
+        var container1 = $('.container1');
+        var container1Top = container1.offset().top;
+        var container1Bottom = container1Top + container1.outerHeight();
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
 
-                // Check if contact is within the viewport
-                if (contactBottom > viewportTop && contactTop < viewportBottom) {
-                    container1.addClass('animate');
-                } else {
-                    container1.removeClass('animate');
-                }
-            });
-        });
+        // Check if container1 is completely out of the viewport
+        if (container1Bottom <= viewportTop || container1Top >= viewportBottom) {
+            container1.removeClass('animate');
+        } else {
+            container1.addClass('animate');
+        }
+    });
+});
+
+
 
     </script>
 </body>
