@@ -44,33 +44,33 @@
     <div class="container2">
         <div class="skill-list-total">
             <div class="skill-list">
-                <i class="cib-html5"></i>
+                <img src="images\C_Programming_Language.svg">
             </div>
             <div class="skill-list">
-                <i class="cib-css3"></i>
+                <img src="images\ISO_C++_Logo.svg">
             </div>
             <div class="skill-list">
-                <i class="cib-java"></i>
+                <img src="images\java-icon.svg">
             </div>
             <div class="skill-list">
-                <i class="cib-python"></i>
+                <img src="images\python-icon.svg">
             </div>
             <div class="skill-list">
-                <i class="cib-node"></i>
+                <img src="images\html-5-logo-svgrepo-com.svg">
             </div>
             <div class="skill-list">
-                <i class="cib-database"></i>
+                <img src="images/CSS3_logo_and_wordmark.svg">
             </div>
             <div class="skill-list">
-                <i class="cib-javascript"></i>
+                <img src="images/logo-javascript.svg">
             </div>
             <div class="skill-list">
-                <i class="cib-javascript"></i>
+                <img src="images/Spring_Boot.svg">
             </div>
             <div class="skill-list">
-                <i class="cib-javascript"></i>
+                <img src="images/mysql-official.svg">
             </div>
-            <!-- Add more skill items as needed -->
+
         </div>
     </div>
 
@@ -88,6 +88,21 @@
                     container1.removeClass('animate');
                 } else {
                     container1.addClass('animate');
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(window).on('scroll', function() {
+                var container2 = $('.container2');
+                var container2Top = container2.offset().top;
+                var container2Bottom = container2Top + container2.outerHeight();
+                var viewportTop = $(window).scrollTop();
+                var viewportBottom = viewportTop + $(window).height();
+
+                if (container2Bottom <= viewportTop || container2Top >= viewportBottom) {
+                    container2.removeClass('animate');
+                } else {
+                    container2.addClass('animate');
                 }
             });
         });
