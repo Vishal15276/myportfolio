@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
-    
+    <title>Vishal's Portfolio</title>
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Vishal</a>
         <nav class="navbar">
-            <div class="about">
-                <a href="about.html">About</a>
-            </div>
-            <div class="contact">
-                <a href="#contact-hov">Contact</a>
-            </div>
-            <div class="projects">
-                <a href="link.html">Projects</a>
-            </div>
-            <div class="skill">
-                <a href="skill.html">Skills</a>
-            </div>
+            <div class="about"><a href="about.html">About</a></div>
+            <div class="contact"><a href="#contact-hov">Contact</a></div>
+            <div class="projects"><a href="link.html">Projects</a></div>
+            <div class="skill"><a href="skill.html">Skills</a></div>
         </nav>
     </header>
 
@@ -42,43 +35,62 @@
     </div>
 
     <h1 id="contact-hov">Contact</h1>
-    
     <div class="container1">
-        <h2><center>Email: vishal15276@gmail.com</center></h2>
-        
+        <h2><center>Email: <a href="mailto:vishal15276@gmail.com">   vishal15276@gmail.com</a> </center></h2>
         <h2><center>Mobile: +91 9361413115</center></h2>
     </div>
 
     <h1 id="skill-hov">Skills</h1>
     <div class="container2">
-    <div class="container3">
-        vdgfdfgg
+        <div class="skill-list-total">
+            <div class="skill-list">
+                <i class="cib-html5"></i>
+            </div>
+            <div class="skill-list">
+                <i class="cib-css3"></i>
+            </div>
+            <div class="skill-list">
+                <i class="cib-java"></i>
+            </div>
+            <div class="skill-list">
+                <i class="cib-python"></i>
+            </div>
+            <div class="skill-list">
+                <i class="cib-node"></i>
+            </div>
+            <div class="skill-list">
+                <i class="cib-database"></i>
+            </div>
+            <div class="skill-list">
+                <i class="cib-javascript"></i>
+            </div>
+            <div class="skill-list">
+                <i class="cib-javascript"></i>
+            </div>
+            <div class="skill-list">
+                <i class="cib-javascript"></i>
+            </div>
+            <!-- Add more skill items as needed -->
+        </div>
     </div>
-    </div>
-    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
     <script>
         $(document).ready(function() {
-    $(window).on('scroll', function() {
-        var container1 = $('.container1');
-        var container1Top = container1.offset().top;
-        var container1Bottom = container1Top + container1.outerHeight();
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
+            $(window).on('scroll', function() {
+                var container1 = $('.container1');
+                var container1Top = container1.offset().top;
+                var container1Bottom = container1Top + container1.outerHeight();
+                var viewportTop = $(window).scrollTop();
+                var viewportBottom = viewportTop + $(window).height();
 
-        // Check if container1 is completely out of the viewport
-        if (container1Bottom <= viewportTop || container1Top >= viewportBottom) {
-            container1.removeClass('animate');
-        } else {
-            container1.addClass('animate');
-        }
-    });
-});
-
-
-
+                if (container1Bottom <= viewportTop || container1Top >= viewportBottom) {
+                    container1.removeClass('animate');
+                } else {
+                    container1.addClass('animate');
+                }
+            });
+        });
     </script>
 </body>
 </html>
