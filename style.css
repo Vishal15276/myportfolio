@@ -170,6 +170,7 @@ p {
     color: aqua;
 }
 .container1 {
+    margin-top: 50px;
     background-image: url("1000_F_538627760_ah9BPKQ0K4d9PnJ6O5UrsPATy1IaY3ne.jpg");
     background-size: cover;
     display: flex;
@@ -199,4 +200,10 @@ p {
         opacity: 0.5;
         transform: translateX(0); /* Slide to the center */
     }
+}
+#skill-hov{
+    margin-top:100px;
+}
+.container2{
+    gap:5rem;
 }
