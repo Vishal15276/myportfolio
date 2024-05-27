@@ -48,6 +48,7 @@ a {
 
 p {
     margin-top: 3rem;
+    margin-right: 600px;
 }
 
 .logo {
@@ -101,11 +102,13 @@ p {
     color: aqua;
     transform: scale(1.2);
     z-index: 10;
+    box-shadow: 0px 4px 8px aqua;
 }
 
 .contact:hover a, .about:hover a, .projects:hover a, .skill:hover a {
     color: aqua;
 }
+
 
 .social {
     margin-top: 50px;
@@ -130,8 +133,9 @@ p {
 
 .cib-linkedin:hover, .cib-leetcode:hover, .cib-hackerrank:hover, .cib-github:hover {
     background-color: black;
-    border-radius: 20%;
+    border-radius: 30%;
     color: aqua;
+    box-shadow: 0px 4px 8px aqua;
 }
 
 .container1 {
@@ -152,10 +156,10 @@ p {
 }
 
 .animate {
-    animation: slideIn 1.5s forwards;
+    animation: slideIn1 1.5s forwards;
 }
 
-@keyframes slideIn {
+@keyframes slideIn1 {
     from {
         opacity: 0;
         transform: translateX(-100%);
@@ -163,6 +167,23 @@ p {
     to {
         opacity: 0.5;
         transform: translateX(0);
+        margin-left: 400px;
+       
+    }
+}
+.animate1 {
+    animation: slideIn2 1.5s forwards;
+}
+
+@keyframes slideIn2 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 0.5;
+        transform: translateX(0);
+       
     }
 }
 
