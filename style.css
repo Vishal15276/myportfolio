@@ -257,25 +257,52 @@ p {
 .container3 {
     display: grid;
     justify-content: center;
-    grid-template-columns: 400px 400px; /* Two columns */
+    grid-template-columns: 500px 500px; /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
-    gap: 20px; /* Adjusted gap between grid items */
-    background-color: #2196F3;
+    gap: 30px; /* Adjusted gap between grid items */
+
     padding: 10px;
-    margin-top: ;
+
   }
   
   .container3 > div {
-    background-color: rgba(9, 9, 9, 0.8);
+    background-color: rgba(238, 238, 238, 0.8);
     text-align: center;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     font-size: 30px;
     border-radius: 30%;
   }
-  .edu{
-    margin-top: 30px;
+  .edu h1{
+    margin-top: 50px;
+    font-size: 30px;
   }
+  .edu:hover{
+    background-color:black;
+    box-shadow: 0px 4px 16px aqua;
+  }
+  @keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.edu {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.edu.animate {
+    animation: slideInLeft 1s forwards;
+}
+
+
+
   h4{
     margin-top: 30px;
   }
