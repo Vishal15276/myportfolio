@@ -44,11 +44,11 @@
 
     <h1 class="education">Education</h1>
     <div class="container3">
-        <div class="edu">10th Qualification
+        <div class="edu"><h1>10th Education</h1>
             <h4>ncvdasjkfbcd hjnb </h4>
         </div>
-        <div class="edu">12th Qualificatiopn</div>
-        <div class="edu">College</div>
+        <div class="edu"><h1>12th Education</h1></div>
+        <div class="edu"><h1>College</h1></div>
         <div class="edu">Implant Training</div>
     </div>
 
@@ -118,6 +118,29 @@
                 }
             });
         });
+        $(document).ready(function() {
+    $(window).on('scroll', function() {
+        $('.edu').each(function(i) {
+            var edu = $(this);
+            var eduTop = edu.offset().top;
+            var eduBottom = eduTop + edu.outerHeight();
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+
+            if (eduTop < viewportBottom && eduBottom > viewportTop) {
+                setTimeout(function() {
+                    edu.addClass('animate');
+                }, i * 1); // Delay each animation by 300ms
+            }
+            else{
+                edu.removeClass('animate');
+            }
+        });
+    });
+});
+
+
+
     </script>
 </body>
 </html>
