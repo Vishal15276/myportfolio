@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(37, 29, 37);
+    background-color: #1A0744;
     display: flex;
     background-size: cover;
 }
@@ -8,6 +8,27 @@ body {
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
+}
+
+.animate-name h1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: fadeOutCenter 2s ease-out forwards;
+}
+
+@keyframes fadeOutCenter {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Additional styles for the rest of the content */
+.rest-of-content {
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 2s ease-in-out; /* Add transition for smooth appearance */
 }
 
 * {
@@ -23,6 +44,8 @@ a {
 .name {
     font-size: 30px;
     color: aliceblue;
+    margin-top: 200px;
+    margin-left: 140px;
 }
 
 .header {
@@ -36,34 +59,30 @@ a {
     gap: 0rem;
     align-items: center;
 }
-.name h1{
+
+.name h1 {
     font-size: 45px;
 }
-.name h3{
+
+.name h3 {
     font-size: 30px;
 }
+
 .name h1:hover {
     color: aqua;
 }
-p{
-  font-size: 20px;
-}
-
-.container {
-    margin-top: 200px;
-    margin-left: 140px;
-}
 
 p {
-    margin-top: 0rem;
-    margin-right: 600px;
+    font-size: 20px;
+    margin-right: 800px;
 }
-.image{
+
+.image {
     height: 300px;
     width: 300px;
     border-radius: 50%;
     margin-left: 800px;
-    margin-top:-200px;
+    margin-top: -200px;
 }
 
 .logo {
@@ -80,7 +99,8 @@ p {
     margin-right: 200px;
 }
 
-.button1, .button2 {
+.button1,
+.button2 {
     margin-top: 40px;
     display: inline-block;
     width: 200px;
@@ -93,13 +113,17 @@ p {
     transition: color 0.3s, background-color 0.3s, transform 0.3s;
 }
 
-.button1:hover, .button2:hover {
+.button1:hover,
+.button2:hover {
     color: aqua;
     background-color: rgb(0, 0, 0);
     transform: scale(1.1);
 }
 
-.contact, .about, .projects, .skill {
+.contact,
+.about,
+.projects,
+.skill {
     display: inline-block;
     position: relative;
     text-align: center;
@@ -108,25 +132,31 @@ p {
     overflow: hidden;
     white-space: nowrap;
     background-color: transparent;
-    margin: 10px; 
+    margin: 10px;
     padding: 0.5rem 1rem;
 }
 
-.contact:hover, .about:hover, .projects:hover, .skill:hover {
+.contact:hover,
+.about:hover,
+.projects:hover,
+.skill:hover {
     background-color: black;
     color: aqua;
-    transform: scale(1.1);
+    transform: scale(1.1E);
     z-index: 10;
     box-shadow: 0px 4px 8px aqua;
 }
 
-.contact:hover a, .about:hover a, .projects:hover a, .skill:hover a {
+.contact:hover a,
+.about:hover a,
+.projects:hover a,
+.skill:hover a {
     color: aqua;
 }
 
-
 .social {
     margin-top: 50px;
+    margin-left: 140px;
 }
 
 #contact-hov {
@@ -134,7 +164,10 @@ p {
     margin-left: 140px;
 }
 
-.cib-linkedin, .cib-leetcode, .cib-hackerrank, .cib-github {
+.cib-linkedin,
+.cib-leetcode,
+.cib-hackerrank,
+.cib-github {
     gap: 3rem;
     margin-top: 200px;
     padding: 30px;
@@ -146,22 +179,24 @@ p {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.cib-linkedin:hover, .cib-leetcode:hover, .cib-hackerrank:hover, .cib-github:hover {
+.cib-linkedin:hover,
+.cib-leetcode:hover,
+.cib-hackerrank:hover,
+.cib-github:hover {
     background-color: black;
     border-radius: 30%;
     color: aqua;
     box-shadow: 0px 4px 8px aqua;
 }
 
-
-.education{
+.education {
     margin-left: 140px;
     margin-top: 110px;
 }
 
 .container1 {
     margin-top: 50px;
-    background-image: url("images/abstract-black-lines-geometric-background_677411-2748.avif");
+    background-color: black;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -169,7 +204,7 @@ p {
     height: 50vh;
     width: 40%;
     margin-left: 520px;
-    color:white;
+    color: white;
     font-weight: 500;
     gap: 7rem;
     font-size: 20px;
@@ -185,13 +220,14 @@ p {
         opacity: 0;
         transform: translateX(-100%);
     }
+
     to {
         opacity: 0.5;
         transform: translateX(0);
         margin-left: 400px;
-       
     }
 }
+
 .animate1 {
     animation: slideIn2 1.5s forwards;
 }
@@ -201,10 +237,10 @@ p {
         opacity: 0;
         transform: translateX(-100%);
     }
+
     to {
         opacity: 0.5;
         transform: translateX(0);
-       
     }
 }
 
@@ -214,7 +250,7 @@ p {
 }
 
 .container2 {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     width: 60%;
     height: 700px;
     display: flex;
@@ -231,27 +267,29 @@ p {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 50px;
-}   
+}
 
 .skill-list {
     width: 200px;
     height: 200px;
-    background-color:aqua;
+    background-color: aqua;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-.skill-list:hover{
-    background-color:rgb(0, 0, 0);
+
+.skill-list:hover {
+    background-color: rgb(0, 0, 0);
     border-radius: 20%;
     color: rgb(1, 1, 1);
-   
     z-index: 10;
     box-shadow: 8px 8px 30px aqua;
 }
-.skill-list i, .skill-list img {
+
+.skill-list i,
+.skill-list img {
     font-size: 100px;
     width: 100px;
     height: auto;
@@ -262,38 +300,43 @@ p {
     width: 80%;
     height: auto;
 }
+
 .container3 {
     display: grid;
     justify-content: center;
-    grid-template-columns: 500px 500px; /* Two columns */
-    grid-template-rows: auto auto; /* Two rows */
-    gap: 30px; /* Adjusted gap between grid items */
+    grid-template-columns: 500px 500px;
+    /* Two columns */
+    grid-template-rows: auto auto;
+    /* Two rows */
+    gap: 30px;
+    /* Adjusted gap between grid items */
+}
 
-    padding: 10px;
-
-  }
-  
-  .container3 > div {
-    background-color: rgba(238, 238, 238, 0.8);
+.container3>div {
+    background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     font-size: 30px;
     border-radius: 30%;
-  }
-  .edu h1{
+}
+
+.edu h1 {
     margin-top: 50px;
     font-size: 30px;
-  }
-  .edu:hover{
-    background-color:black;
+}
+
+.edu:hover {
+    background-color: black;
     box-shadow: 0px 4px 16px aqua;
-  }
-  @keyframes slideInLeft {
+}
+
+@keyframes slideInLeft {
     from {
         opacity: 0;
         transform: translateX(-100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -309,11 +352,6 @@ p {
     animation: slideInLeft 1s forwards;
 }
 
-
-
-  h4{
+h4 {
     margin-top: 30px;
-  }
-
-
-
+}
