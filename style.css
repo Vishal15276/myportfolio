@@ -21,7 +21,7 @@ a {
 }
 
 .name {
-    font-size: 40px;
+    font-size: 30px;
     color: aliceblue;
 }
 
@@ -33,12 +33,20 @@ a {
     border-color: aliceblue;
     justify-content: space-between;
     height: 10vh;
-    gap: 1rem;
+    gap: 0rem;
     align-items: center;
 }
-
+.name h1{
+    font-size: 45px;
+}
+.name h3{
+    font-size: 30px;
+}
 .name h1:hover {
     color: aqua;
+}
+p{
+  font-size: 20px;
 }
 
 .container {
@@ -107,7 +115,7 @@ p {
 .contact:hover, .about:hover, .projects:hover, .skill:hover {
     background-color: black;
     color: aqua;
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 10;
     box-shadow: 0px 4px 8px aqua;
 }
