@@ -51,15 +51,17 @@
 
     <h1 class="education">Education</h1>
     <div class="container3">
-        <div class="edu"><h1>10th Education</h1>
-            <h4>ncvdasjkfbcd hjnb </h4>
-        </div>
+        <div class="edu"><h1>School Education</h1>
+                <p>Completed my 10th standard with 87.4 percentage and my 12th with 79.8 percentage</p>
+            </div>
         <div class="edu"><h1>12th Education</h1></div>
         <div class="edu"><h1>College</h1></div>
-        <div class="edu">Implant Training</div>
+        <div class="edu">
+            <h1>Implant Training</h1>
+        </div>
     </div>
 
-    <h1 id="skill-hov">Skills </h1>
+    <h1     id="skill-hov">Skills </h1>
     <div class="container2">
         <div class="skill-list-total">
             <div class="skill-list">
@@ -145,46 +147,39 @@
             });
         });
 
-        document.addEventListener("DOMContentLoaded", function() {
-            // Hide the rest of the content initially
-            document.querySelector('.rest-of-content').style.opacity = '0';
-
-            // Show the rest of the content after the animation completes
-            setTimeout(function() {
-                document.querySelector('.name').style.opacity = '0'; // Hide "Vishal" smoothly
-                setTimeout(function() {
-                    document.querySelector('.name').style.display = 'none'; // Hide "Vishal" completely
-                    document.querySelector('.rest-of-content').style.opacity = '1'; // Show the rest of the content
-                }, 1000); // 2000 milliseconds = 2 seconds (same duration as the animation)
-            }, 2000); // 4000 milliseconds = 4 seconds (same duration as the animation)
-        });
         $(document).ready(function() {
-        // Check if "Vishal" has been shown before
-        var vishalShown = localStorage.getItem('vishalShown');
+    // Check if the animate-name animation has been shown before
+    var animateNameShown = sessionStorage.getItem('animateNameShown');
 
-        if (!vishalShown) {
-            // Show "Vishal" from the center
-            $('.name').css({
-                'opacity': 0,
-                'transform': 'translate(-50%, -50%) scale(0.5)',
-                'transition': 'opacity 1s ease, transform 1s ease'
-            });
-            setTimeout(function() {
-                $('.name').css({
-                    'opacity': 1,
-                    'transform': 'translate(-50%, -50%) scale(1)'
-                });
-            }, 100);
-
-            // Set flag in localStorage indicating that "Vishal" has been shown
-            localStorage.setItem('vishalShown', true);
-        }
-
-        // Show the whole content after 5 seconds
+    if (!animateNameShown) {
+        // Show the animate-name element
+        $('.animate-name').css({
+            'opacity': 0,
+            'transform': 'translate(-50%, -50%) scale(0.5)',
+            'transition': 'opacity 1s ease, transform 1s ease'
+        });
         setTimeout(function() {
-            $('.rest-of-content').fadeIn(2000);
-        }, 5000);
-    });
+            $('.animate-name').css({
+                'opacity': 1,
+                'transform': 'translate(-50%, -50%) scale(1)'
+            });
+        }, 100);
+
+        // Set flag in session storage indicating that animate-name has been shown
+        sessionStorage.setItem('animateNameShown', true);
+    }
+
+    // Show the rest of the content after the animation completes
+    setTimeout(function() {
+        document.querySelector('.name').style.opacity = '0'; // Hide "Vishal" smoothly
+        setTimeout(function() {
+            document.querySelector('.name').style.display = 'none'; // Hide "Vishal" completely
+            document.querySelector('.rest-of-content').style.opacity = '1'; // Show the rest of the content
+        }, 1000); // 2000 milliseconds = 2 seconds (same duration as the animation)
+    }, 2000); // 4000 milliseconds = 4 seconds (same duration as the animation)
+});
+
+
     </script>
 </body>
 </html>
