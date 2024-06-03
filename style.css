@@ -25,7 +25,9 @@ body {
     50% { opacity: 1; }
     100% { opacity: 0; }
 }
-
+.text{
+    margin-top: -50px;
+}
 /* Additional styles for the rest of the content */
 .rest-of-content {
     opacity: 0; /* Initially set opacity to 0 */
