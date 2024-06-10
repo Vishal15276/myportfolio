@@ -310,9 +310,9 @@ p {
     grid-template-columns: 600px 600px;
     
     grid-template-rows: auto auto;
-    /* Two rows */
+    
     gap: 30px;
-    /* Adjusted gap between grid items */
+    
 }
 
 .container3>div {
@@ -324,7 +324,7 @@ p {
     border-radius: 30%;
 }
 
-.edu h1 {
+.edu h1 {   
     margin-top: 50px;
     font-size: 30px;
 }
