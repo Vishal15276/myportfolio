@@ -198,7 +198,7 @@ p {
 }
 
 .container1 {
-    margin-top: 50px;
+    margin-top: 70px;
     background-color: black;
     background-size: cover;
     display: flex;
@@ -307,8 +307,8 @@ p {
 .container3 {
     display: grid;
     justify-content: center;
-    grid-template-columns: 500px 500px;
-    /* Two columns */
+    grid-template-columns: 600px 600px;
+    
     grid-template-rows: auto auto;
     /* Two rows */
     gap: 30px;
@@ -319,7 +319,7 @@ p {
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     height: 400px;
-    width: 400px;
+    width: 600px;
     font-size: 30px;
     border-radius: 30%;
 }
